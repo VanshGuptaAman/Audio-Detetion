@@ -1,0 +1,53 @@
+Java Important Questions-
+*****************************************************************
+Q.1 - Define Features of JAVA.
+Q.2 - Define OOPS Principle.(IMP-Polymorphism,*Inhertance*)
+Q.3* - Define Constructor with Example.
+Q.4* - What is thread? Define Life Cycle of A thread.
+Q.5* - Define Overloading and Overriding methods.
+Q.6* - What is Applet?life cycle of Applet.
+Q.7 - SHORT NOTES:-
+    i   - Synchronization of thread.
+    ii  - Acception handling 
+    iii* - Thread priority
+    iv * - Abstraction
+Q.8 - Difference between Private,Protected and Public. 
+
+
+n=4;
+for(r=1;r<=n;r++)
+{
+	for(space=1;space<=n-r;space++)
+	{
+		printf(" ");
+	}
+	if(r==1)
+	{
+		printf("*");
+	}
+	else
+	{
+		printf("*");
+		for(i=1;i<=5;i++)
+		{
+			if(i%2==1)
+			{
+				printf(" ");
+			}	
+		}
+		printf("*");
+	}
+}
+
+
+
+	---*
+	--*-*
+	-*---*
+	*-----*
+
+***********************
+
+	-*---*
+	--*-*
+	---*

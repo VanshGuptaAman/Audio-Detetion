@@ -1,0 +1,5 @@
+1. What are the different type in Java
+
+
+
+WAP to input n elements in a single dimensional int array to print them.

@@ -1,0 +1,63 @@
+class One extends Thread
+{
+	public void run()
+	{
+		for(int i=1; i<=5; i++)
+		{
+			if(i==1)
+			yield();
+			System.out.println("\t When I am in Thread One:i="+i); 
+		}
+		System.out.println("Out of Thread One");
+	}
+}
+class Two extends Thread
+{
+	public void run()
+	{
+	    for(int j=1; j<=5; j++)
+		{
+			if(j==3)
+			stop();	
+		    System.out.println("\t When I am in thread Two:j="+j); 
+		}
+		System.out.println("Out of Thread Two");
+	}
+}
+class Three extends Thread
+{
+	public void run()
+	{
+	    for(int k=1; k<=5; k++)
+		{
+			if(k==2)
+			try 
+			{
+				sleep(2000);
+			}
+			catch(Exception e)
+			{
+				
+			}
+		    System.out.println("\t When I am in thread three:k="+k);
+		
+		}
+         System.out.println("Out of thread three");
+	}
+}
+public class TestingMethod
+{
+	public static void main(String []args)
+	{
+		One OneThread=new One();
+		Two TwoThread=new Two();
+		Three ThreeThread=new Three();
+		System.out.println("start thread one");
+		OneThread.start();
+		System.out.println("start thread Two");
+		TwoThread.start();
+		System.out.println("start thread Three");
+		ThreeThread.start();
+		System.out.println("output of main thread");
+	}
+}

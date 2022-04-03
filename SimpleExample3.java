@@ -1,0 +1,18 @@
+import java.awt.*;
+public class SimpleExample3 extends Frame
+{
+SimpleExample3()
+{
+TextArea ta=new TextArea();
+ta.setBounds(50,50,50,50);
+add(ta);
+setSize(500,300);
+setTitle("Kuchh Bhi");
+setLayout(new FlowLayout());
+setVisible(true);
+}
+public static void main(String args[])
+{
+SimpleExample3 P=new SimpleExample3();
+}
+}
